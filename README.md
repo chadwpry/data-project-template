@@ -17,9 +17,11 @@ should be covered.
 
 ### File Structure
 
+<pre>
 /
 |- data (data files related to the project)
 |- sql (sql scripts related to the project)
+</pre>
 
 
 ##### Data directory
@@ -49,11 +51,11 @@ and execute those in whatever manner you wish.
 
 **Creating Tables**
 ```sh
-psql -d <database-name> -f create.sql
+psql -d <database-name> -f ./sql/create.sql
 ```
 
 **Importing Data**
 ```sh
-psql -d <database-name> -f import.sql
+psql -d <database-name> -f ./sql/import.sql
 ```
 
